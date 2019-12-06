@@ -1,0 +1,23 @@
+#To change registry value 
+
+Set-ItemProperty -Path HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Advanced -Name TaskbarSizeMove -Value 1
+
+# To display registry Value
+
+Get-ItemProperty -Path HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Advanced -Name TaskbarSizeMove
+ 
+# How to create Demo Directory 
+New-Item D:\Demo -Name Demo -ItemType Directory  
+
+# How to create test.txt file in directory “Demo”
+New-Item D:\Demo -Name Test.txt -ItemType File  
+
+# Display temp folder item
+Get-ChildItem -Path C:\Users\viaan\AppData\Local\Temp 
+
+# How append content in test file. 
+
+Add-Content D:\Demo\Test.txt "How r u" 
+
+
+
